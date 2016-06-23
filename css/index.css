@@ -8,3 +8,17 @@
 	height:400px;
 	border: 1px solid #f00;
 }
+.toLeft{
+	position: absolute;
+	background:url("../img/home_bg.png") no-repeat;
+	width: 45px;
+	height:100px;
+	border: 1px solid #000;
+	z-index: 2;
+}
+.toRight{
+	position: absolute;
+	background:url("../img/home_bg.png") no-repeat;
+	width: 45px;
+	height:100px;
+}
