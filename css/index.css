@@ -10,15 +10,27 @@
 }
 .toLeft{
 	position: absolute;
-	background:url("../img/home_bg.png") no-repeat;
-	width: 45px;
-	height:100px;
-	border: 1px solid #000;
-	z-index: 2;
+	background:url("../img/home_bg.png") no-repeat 0 -100px;
+ 	width: 45px;
+    height: 100px;
+    z-index: 2;
+    top: 160px;
+    cursor: pointer;
+    left: 213px;
+    display: none;
+    opacity: 0.3;
+    filter:alpha(opactiy=30);
 }
 .toRight{
 	position: absolute;
-	background:url("../img/home_bg.png") no-repeat;
+	background:url("../img/home_bg.png") no-repeat -45px -100px;
 	width: 45px;
 	height:100px;
+	z-index: 2;
+    top: 160px;
+    cursor: pointer;
+    left: 945px;
+    display: none;
+    opacity: 0.3;
+    filter:alpha(opactiy=30);
 }
