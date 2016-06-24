@@ -246,6 +246,9 @@
 	color: #7C7C7C;
 	font-size: 12px;
 }
+.show .show-title .t-nav li.t-navOn{
+	color: #DB3600;
+}
 .show .show-title .more{
 	margin-left: 30px;
 	margin-top: 10px;
@@ -277,6 +280,15 @@
 	margin-top: 10px;
 	float: left;
 }
+
+
+.show .show-m .m-r div.listOn{
+	display: block;
+}
+
+.show .show-m .m-r .list1{
+	display: none;
+}
 .show .show-m .m-r .list1 li{
 	float: left;
 	overflow:hidden;
@@ -292,6 +304,11 @@
 	top: 0;
 	left: -52px;
 }
+
+
+.show .show-m .m-r .list2{
+	display: none;
+}
 .show .show-m .m-r .list2 dl{
 	float:left;
 	width: 190px;
@@ -299,7 +316,7 @@
 	border-right:1px solid #898989;
 	border-bottom:1px solid #898989;
 	text-align: center;
-	padding:10px;
+	padding:19px 10px;
 } 
 .show .show-m .m-r .list2 dl dt{
 	position: relative;
@@ -308,13 +325,24 @@
 	max-height: 160px;
 	max-width: 160px;
 	display: block;
-	margin:0 20px;
+	margin:0 auto;
 	position: relative;
 	top: 0;
-	left: 0;	
+	left: -6px;	
+}
+
+.show .show-m .m-r .list2 dl:hover{
+	background: #ecf0f1;
+}
+.show .show-m .m-r .list2 dl:hover a{
+	color:#f00;
 }
 .show .show-m .m-r .list2 dl dd a{
 	font-size: 12px;
+	color: #555;
+}
+.show .show-m .m-r .list2 dl dd a:hover{
+	text-decoration: underline;
 }
 .show .show-m .m-r .list2 dl dd span{
 	display:inline-block;
@@ -332,6 +360,15 @@
 }
 
 
+.show .show-m .m-r .list3{
+	display: none;
+}
+.show .show-m .m-r .list3 dl:hover{
+	background: #ecf0f1;
+}
+.show .show-m .m-r .list3 dl:hover a{
+	color:#f00;
+}
 .show .show-m .m-r .list3 dl{
 	float:left;
 	width: 190px;
@@ -339,7 +376,7 @@
 	border-right:1px solid #898989;
 	border-bottom:1px solid #898989;
 	text-align: center;
-	padding:10px;
+	padding:19px 10px;
 } 
 .show .show-m .m-r .list3 dl dt{
 	position: relative;
@@ -348,13 +385,17 @@
 	max-height: 160px;
 	max-width: 160px;
 	display: block;
-	margin:0 20px;
+	margin:0 auto;
 	position: relative;
 	top: 0;
-	left: 0;	
+	left: -6px;	
 }
 .show .show-m .m-r .list3 dl dd a{
 	font-size: 12px;
+	color: #555;
+}
+.show .show-m .m-r .list3 dl dd a:hover{
+	text-decoration: underline;
 }
 .show .show-m .m-r .list3 dl dd span{
 	display:inline-block;
@@ -372,7 +413,15 @@
 }
 
 
-
+.show .show-m .m-r .list4{
+	display: none;
+}
+.show .show-m .m-r .list4 dl:hover{
+	background: #ecf0f1;
+}
+.show .show-m .m-r .list4 dl:hover a{
+	color:#f00;
+}
 .show .show-m .m-r .list4 dl{
 	float:left;
 	width: 190px;
@@ -380,7 +429,7 @@
 	border-right:1px solid #898989;
 	border-bottom:1px solid #898989;
 	text-align: center;
-	padding:10px;
+	padding:19px 10px;
 } 
 .show .show-m .m-r .list4 dl dt{
 	position: relative;
@@ -392,10 +441,14 @@
 	margin:0 20px;
 	position: relative;
 	top: 0;
-	left: 0;	
+	left: -6px;	
 }
 .show .show-m .m-r .list4 dl dd a{
 	font-size: 12px;
+	color: #555;
+}
+.show .show-m .m-r .list4 dl dd a:hover{
+	text-decoration: underline;
 }
 .show .show-m .m-r .list4 dl dd span{
 	display:inline-block;

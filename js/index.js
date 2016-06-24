@@ -124,6 +124,7 @@ $(function(){
 		clearInterval(timer);
 	}
 	autoPlay();
+	//hover时图片上移
 	$(".sale .sale-t .t-img li").on({
 		"mouseover":function(){
 			$(this).find("img").stop().animate({
@@ -135,7 +136,41 @@ $(function(){
 				"top":"0px"
 			},10);
 		}
-		})
+	});
 	
+	//show框的
+	//hover时图片右移
+	$(".list1 li").find("img").on({
+		"mouseover":function(){
+			$(this).stop().animate({
+				"left":"-22px"
+			},200)
+		},
+		"mouseout":function(){
+			$(this).stop().animate({
+				"left":"-52px"
+			},200)
+		}
+	});
 	
+	//hover时图片上移
+	$(".m-r div dl dt").find("img").on({
+		"mouseover":function(){
+			$(this).stop().animate({
+				"top":"-8px"
+			},200)
+		},
+		"mouseout":function(){
+			$(this).stop().animate({
+				"top":"-0px"
+			},200)
+		}
+	});
+	//hover时切换
+	$(".t-nav li").on({
+		"mouseover":function(){
+			$(this).addClass("t-navOn").siblings().removeClass("t-navOn");
+			$(".m-r > div").eq($(this).index()).addClass("listOn").siblings().removeClass("listOn");
+		}
+	})
 })
