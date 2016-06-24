@@ -344,7 +344,7 @@
 }
 #nav .all-category .category ul li{
 	position: relative;
-	height:30px;
+	height:26px;
 	width:212px;
 	padding-top:4px;
 	top:5px;
@@ -353,9 +353,9 @@
 #nav .all-category .category ul li .menu1{
 	position: absolute;
 	margin-top:-5px;
-	top: 0;
+	top: 2px;
 	height:22px;
-	padding: 5px 0 5px 10px;
+	padding: 0 0 10px 10px;
 	border-style: solid;
 	border-width: 1px 0 1px 4px;
 	border-color: transparent;
@@ -366,9 +366,9 @@
 	border-top: 1px solid #f00;
 	border-bottom: 1px solid #f00;
 	background:#fff;
-	height:30px;
+	height:28px;
 	position: absolute;
-	top: 0;
+	top: 2px;
 	z-index: 20;
 }
 #nav .all-category .category ul li a{

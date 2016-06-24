@@ -3,7 +3,7 @@ $(function(){
 	addHtml("common/topNav.html","#top_nav");
 	addHtml("common/header.html","#header");
 	addHtml("common/nav.html","#nav");
-	addHtml("common/footer.html","#footer");
+	//addHtml("common/footer.html","#footer");
 })
 
 function addHtml(url,target){
