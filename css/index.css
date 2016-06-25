@@ -1,3 +1,4 @@
+
 .wid-1200{
 	position: relative;
 }
@@ -153,7 +154,7 @@
 
 
 .sale{
-	position: absolute;
+	position: relative;
 	top: 400px;
 	left: 0;
 }
@@ -220,8 +221,8 @@
 }
 
 .show{
-	position: absolute;
-	top:860px;
+	position: relative;
+	top:400px;
 	width:100%;
 }
 .show .show-title{
@@ -242,8 +243,9 @@
 }
 .show .show-title .t-nav li{
 	float: left;
-	padding: 12px 10px 0;
+	padding: 12px 0px 0;
 	color: #7C7C7C;
+	margin-left: 14px;
 	font-size: 12px;
 }
 .show .show-title .t-nav li.t-navOn{
@@ -293,7 +295,7 @@
 	float: left;
 	overflow:hidden;
 	height:240px;
-	width:400px;
+	width:406px;
 	margin:0px 0px 18px 18px;
 	position: relative;
 }
@@ -463,4 +465,208 @@
 	font-size: 14px;
 	padding:5px;
 	text-decoration: line-through;
+}
+
+.show .show-b{
+	padding-bottom: 10px;
+}
+.show .show-b li{
+	float:left;
+	height: 50px;
+	margin: 5px;
+	width: 108px;
+	border: 1px solid #DFDFDF;
+}
+.show .show-b li a{
+	height: 100%;
+	width: 100%;
+}
+.show .show-b li a img{
+	height: 100%;
+	width: 100%;
+}
+.show .b-img{
+}
+.show .b-img img{
+	max-height: 95px;
+	margin: 0 auto 20px;
+	display: block;
+	border: 0;
+}
+
+
+#help{
+	position: relative;
+	top: 400px;
+	background:#FAFAFA;
+	border-bottom: 1px solid #F5F5F5;
+	border-top: 1px solid #F5F5F5;
+	height:220px;
+}
+#help .help1{
+	float: left;
+	margin-right: 20px;
+}
+#help .help1 h3{
+	font: 16px/20px "microsoft yahei";
+	color: #666;
+	padding: 10px 5px;
+	margin: 5px 0px;
+	border-bottom: 1px solid #F5F5F5; 
+}
+#help .help1 i{
+	font-size: 0px;
+	line-height: 0;
+	background: url("../img/top_bg.png") no-repeat scroll -80px -10px transparent;
+	vertical-align: middle;
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	margin-right: 5px;
+}
+#help .help1 li {
+	font: 12px/20px "microsoft yahei";
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 2px 5px;
+	overflow: hidden;
+	width: 180px;
+}
+#help .help1 li a{
+	color: #333;
+}
+#help .help1 li a:hover{
+	text-decoration: underline;
+}
+
+#help .help2{
+	float: left;
+	background: #fff;
+	border-left: 1px solid #f5f5f5;
+	height: 200px;
+	padding: 10px;
+}
+#help .help2 h3{
+	font: 16px/20px "microsoft yahei";
+	color: #666;
+	padding: 10px 5px;
+	margin: 5px 0px;
+	border-bottom: 1px solid #F5F5F5; 
+}
+#help .help2 li {
+	font: 12px/20px "microsoft yahei";
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 2px 5px;
+	overflow: hidden;
+	width: 180px;
+	color: #666;
+}
+#help .help2 li a:hover{
+	text-decoration: underline;
+}
+
+
+#help .help3{
+	float: left;
+	background: #fff;
+	border-left: 1px solid #f5f5f5;
+	height: 200px;
+	padding: 10px;
+	width: 126px;
+}
+#help .help3 h3{
+	font: 16px/20px "microsoft yahei";
+	color: #666;
+	padding: 10px 5px;
+	margin: 5px 0px;
+	border-bottom: 1px solid #F5F5F5; 
+}
+#help .help3 li {
+	font: 16px/20px "microsoft yahei";
+	padding: 2px 5px;
+	text-align: center;
+	color: #666;
+}
+#help .help3 li img{
+	width:80px;
+	height: 80px;
+}
+#help .help3 h3 a{
+	color:#666;
+}
+#help .help3 h3 a:hover{
+	color:#f00;
+	text-decoration: underline;
+}
+
+#link{
+	padding-top: 10px;
+	position: relative;
+	top:400px;
+	border-top: 1px solid #f2f2f2;
+}
+#link li{
+	float: left;
+	margin: 5px;
+	padding-bottom: 5px;
+}
+#link li a{
+	color: #555;
+}
+#link li a:hover{
+	color: #f00;
+	text-decoration: underline;
+}
+
+#stair{
+	position: fixed;
+	left:20px;
+	top:50%;
+	margin-top:-150px;
+	border:1px solid #666;
+	padding: 1px;
+	display: none;
+}
+#stair li{
+	position: relative;
+	width: 60px;
+	height:50px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #f12345;
+	color:#fff;
+}
+#stair li span{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top:0;
+	font-size: 12px;
+	border-top: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+	
+}
+#stair li:hover span{
+	display: block;
+	background:#fff;
+	color:#f00;
+	border-top: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+	
+}
+#stair li .stairOn{
+	display: block;
+	background:#fff;
+	color:#f00;
+	width: 100%;
+	height: 100%;
+	top:0;
+	font-size: 12px;
+	position: absolute;
+	border-top: 1px solid #fff;
 }

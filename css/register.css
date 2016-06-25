@@ -1,0 +1,150 @@
+#top_img{
+	background: #FAFAFA;
+}
+/*#header{
+	position: relative;
+	top:10px;
+}*/
+#footer{
+	position: relative;
+	top:0;
+}
+
+.logo{
+	width: 212px;
+	height: 75px;
+	margin: 25px 60px auto 0px;
+}
+.info{
+	width: 1000px;
+	margin: 20px auto;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 1px -2px 20px rgba(0, 0, 0, 0.1) inset;
+	text-align: center;
+}
+.info h3{
+	border-bottom: 1px solid #E6E6E6;
+}
+.info h3 span{
+	display: block;
+	color: #E02423;
+	border-bottom: 2px solid #E02423;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	margin: 0px 26px 0px 27px;
+	cursor: pointer;
+}
+.info .form{
+	background: none repeat scroll 0% 0% #F9F9F9;
+	padding: 20px 0px 0px;
+	overflow: hidden;
+	width: 400px;
+	margin: 10px auto;
+}
+.info .form p{
+	position: absolute;
+	left: 0;
+	top:44px;
+	padding-left: 10px;
+}
+.info .form a:hover{
+	color: #f00;
+	text-decoration: underline;
+}
+.info .form .cBox{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.info .form .cBox input{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border: 1px solid #E6E6E6;
+	height: 40px;
+	width: 398px;
+	text-indent: 10px;
+}
+.info .form .cBox i{
+	position: absolute;
+	right: 16px;
+	top: 13px;
+	width: 16px;
+	height: 16px;
+/*	background: url("../img/correct.png") repeat scroll 0% 0% transparent;*/
+	display: none;
+}
+.info .form .short{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-align: left;
+}
+.info .form .short input{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border: 1px solid #E6E6E6;
+	width: 148px;
+	height: 40px;
+	text-indent: 10px;
+}
+.info .form .short span{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border: 1px solid #E6E6E6;
+	width: 110px;
+	height: 40px;
+	text-indent: 10px;
+	vertical-align: middle;
+}
+.info .form .short a{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	width: 124px;
+	height: 40px;
+	text-indent: 10px;
+	
+}
+.info .form .short i{
+	left: 123px;
+	top: 13px;
+	position: absolute;
+	right: 16px;
+	top: 13px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/correct.png") repeat scroll 0% 0% transparent;
+	display: block;
+}
+.info .form .sBox{
+	text-align: left;
+}
+#checkBox{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border: 1px solid #E6E6E6;
+}
+.sBox span a{
+	color: #C53801;
+	font-weight: 600;
+}
+#submit{
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFF;
+	background: url("../img/register.png") no-repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+	width: 400px;
+	height: 40px;
+	padding: 0px;
+	margin: 20px 0px;
+	border: 0px none;
+	cursor: pointer;
+}

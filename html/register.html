@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="../css/common/base.css" />
+		<link rel="stylesheet" href="../css/common/footer.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../js/common/addData.js" ></script>
+		<script type="text/javascript" src="../js/register.js"></script>
+	</head>
+	<body>
+		<div id="top_img"></div>
+		
+		<div id="header">
+			<div class="w1000">
+				<div class="logo">
+					<a href="index.html">
+						<img src="../img/logo.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="w1000">
+				<div class="info">
+					<h3><span>个人用户注册</span></h3>
+					<div class="form">
+						<form>
+							<div class="cBox">
+								<input id="userName" type="text" placeholder="手机号码" />
+								<p></p>
+								<i></i>
+							</div>
+							<div class="cBox">
+								<input id="pwd" type="password" placeholder="设置密码" />
+								<p></p>
+								<i></i>
+							</div>
+							<div class="short">
+								<input id="checkCode" type="text" placeholder="验证码" />
+								
+								<span></span>
+								<a href="jacascript:0">看不清，换一张</a>
+								<p></p>
+								<i></i>
+							</div>
+							<div class="short">
+								<input id="mCode" type="text" placeholder="短信验证码" />
+								<p></p>
+								<input type="button" value="获取短信验证码" />
+								<i></i>
+							</div>
+							<div class="cBox">
+								<input type="text" placeholder="好友推荐码（非必填）" />
+								<i></i>
+							</div>
+							<div class="sBox">
+								<input id="checkBox" type="checkbox" />
+								<span>阅读并同意<a href="#">服务协议</a></span>
+								<input id="submit" type="submit" value="" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

@@ -173,7 +173,8 @@ body, input, select, button, textarea { font-size: 12px;font-family:tahoma,arial
 .bg_99{background-color: #999;}
 .bg_66{background-color: #666;}
 
-
+.w1200 { margin:0 auto; width:1200px;min-width: 800px;}
+.w1000{margin:0 auto; width:1000px;}
 /*宽度*/
 .wid-1200 { margin:0 auto; width:1200px;min-width: 800px;}
 .wid-10{width: 10%;}
