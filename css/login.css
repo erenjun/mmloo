@@ -1,7 +1,9 @@
 #top_img{
 	background: #FAFAFA;
 }
-
+#main{
+	padding-bottom: 50px;
+}
 #footer{
 	position: relative;
 	top:0;
@@ -91,7 +93,20 @@ cursor: pointer;
 .mr form li span{
 	color:#666;
 }
-
+.mr dl{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px dashed #d8d8d8;
+}
 .mr dl dt{
 	color: #666;
+	margin-left: -108px;
+}
+.mr dl dd a{
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+	height: 28px;
+	width: 78px;
 }
