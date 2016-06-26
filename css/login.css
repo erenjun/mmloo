@@ -1,0 +1,97 @@
+#top_img{
+	background: #FAFAFA;
+}
+
+#footer{
+	position: relative;
+	top:0;
+}
+
+.logo{
+	width: 212px;
+	height: 75px;
+	margin: 25px 60px auto 0px;
+}
+.ml{
+	float:left;
+}
+
+.mr{
+	float:right;
+	width: 400px;
+	background: #f9f9f9;
+	border-right: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	text-align: center;
+}
+.mr h3{
+	font-size: 18px;
+	font-family: "microsoft yahei";
+	font-weight: 700;
+	line-height: 20px;
+	padding: 15px 0 25px 25px;
+	color: #555;
+}
+.mr form{
+	text-align: center;
+}
+.mr form li{
+	padding:10px 0;
+	position: relative;
+}
+.mr form li i{
+	display: block;
+	position: absolute;
+	top:11px;
+	left: 51px;
+	width:40px;
+	height:40px;
+}
+.mr form li i img{
+	width:100%;
+	height:100%;
+}
+.mr form input{
+	padding: 10px 8px 10px 50px;
+	width:240px;
+	height: 20px;
+	border: 1px solid #d8d8d8;
+}
+#loginBtn{
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFF;
+	background: url("../img/login.png") no-repeat scroll 0px -56px;
+	vertical-align: middle;
+	width: 98px;
+	height: 34px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+cursor: pointer;
+}
+.mr form li a{
+	font-weight: 700;
+	color: #06C;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.mr form li button{
+	font-weight: 600;
+	border:0;
+	color: #555;
+	background: url("../img/login.png") no-repeat scroll -98px -56px;
+	text-align: center;
+	width: 50px;
+	height: 26px;
+	margin: 0 6px;
+	cursor: pointer;
+}
+.mr form li span{
+	color:#666;
+}
+
+.mr dl dt{
+	color: #666;
+}

@@ -96,12 +96,16 @@
 .info .form .short span{
 	display: inline-block;
 	font-family: "微软雅黑";
-	font-size: 16px;
+	font-size: 28px;
+	line-height:34px ;
+	font-weight: bold;
+	color: #fff;
 	border: 1px solid #E6E6E6;
 	width: 110px;
 	height: 40px;
-	text-indent: 10px;
+	text-align: center;
 	vertical-align: middle;
+	background: #F12345;
 }
 .info .form .short a{
 	display: inline-block;
@@ -121,7 +125,7 @@
 	width: 16px;
 	height: 16px;
 	background: url("../img/correct.png") repeat scroll 0% 0% transparent;
-	display: block;
+	display: none;
 }
 .info .form .sBox{
 	text-align: left;
@@ -146,5 +150,46 @@
 	padding: 0px;
 	margin: 20px 0px;
 	border: 0px none;
+	cursor: pointer;
+}
+#mCodeBtn{
+	cursor: pointer;
+}
+
+#cg{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+	display: none;
+}
+#cg .zcs{
+	text-align: center;
+	border: 1px solid #898989;
+	width:300px;
+	height:200px;
+	background: #f0f0f0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left: -150px;
+}
+#cg .zcs h3{
+	font:bold 30px/50px "";
+	color:#555;
+	margin:50px 20px 10px;
+	
+}
+#cg .zcs button{
+	font:16px/30px "";
+	width:50px;
+	height:30px;
+	background: #F12345;
+	color: #fff;
+	border: 0;
+	margin:0 10px;
 	cursor: pointer;
 }
