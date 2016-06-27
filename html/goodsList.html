@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" href="../css/common/base.css" />
+		<link rel="stylesheet" href="../css/common/footer.css" />
+		<link rel="stylesheet" href="../css/common/header.css">
+		<link rel="stylesheet" href="../css/goodsList.css" />
+		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../libs/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/common/addData.js" ></script>
+		<script type="text/javascript" src="../js/goodsList.js" ></script>
+		
+	</head>
+	<body>
+		<div id="dl" style="display: none;"></div>
+		
+		<div id="top_img"></div>
+		<div id="top_nav"></div>
+		<div id="header"></div>
+		<div id="nav"></div>
+		
+		<div id="main">
+			<div class="w1200">
+				<div class="classList">
+					<ul class="clear">
+						<li>
+							<i style="background:url('../img/home.png') no-repeat -1px -13px;"></i>
+							<a href="#">首页</a></li>
+						<li>
+							<i>&gt;</i>
+							<a href="#">手机数码</a>
+						</li>
+						<li>
+							<i>&gt;</i>
+							<a class="om" href="#">手机通讯</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mtop clear">
+					<div class="mtop-l">
+						<div class="l-t">
+							<h3>分类筛选</h3>
+							<dl>
+								<dt><i></i><a class="aOn" href="#">手机数码</a></dt>
+								<dd>
+									<ul>
+										<li>
+											<dl>
+												<dt><i></i><a href="#">手机通讯</a></dt>
+												<dd><a href="#">IPhone</a></dd>
+											</dl>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="l-m">
+							<h3>推广商品</h3>
+							<ul>
+								<li><a href="#"><img src="../img/tg1.jpg"/></a></li>
+								<li><a href="#">发烧总监智能无线儿童体温计发烧预警温度计</a></li>
+								<li><span>¥399.00</span></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="../img/tg1.jpg"/></a></li>
+								<li><a href="#">发烧总监智能无线儿童体温计发烧预警温度计</a></li>
+								<li><span>¥399.00</span></li>
+							</ul>
+						</div>
+						<div class="ad">
+							<ul>
+								<li><a href"#"><img src="../img/lx1.jpg"/></a></li>
+							</ul>
+						</div>
+						<div class="l-b">
+							<h3>最近浏览</h3>
+							<ul>
+								<li><a href="#"><img src="../img/tg1.jpg"/></a></li>
+								<li><a href="#">发烧总监智能无线儿童体温计发烧预警温度计</a></li>
+								<li><span>¥399.00</span></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="../img/tg1.jpg"/></a></li>
+								<li><a href="#">发烧总监智能无线儿童体温计发烧预警温度计</a></li>
+								<li><span>¥399.00</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="mtop-r">
+						<div class="navBox clear">
+							<dl class="clear">
+								<dt>排序方式：</dt>
+								<dd><span>默认</span><i></i></dd>
+								<dd><span>销量</span><i></i></dd>
+								<dd><span>人气</span><i></i></dd>
+								<dd><span>价格</span><i></i></dd>
+							</dl>					
+							<dl class="noBorder clear">
+								<dt>商品类型：</dt>
+								<dd ><input type="radio" checked="checked"/>全部</dd>
+								<dd><input type="radio" />商城自营</dd>
+								<dd><input type="radio" />商家加盟</dd>
+							</dl>
+							<dl class="clear noBorder" style="margin-right: 0">
+								<dt>商品所在地：</dt>
+								<dd><a href="#">不限地区<i></i></a></dd>
+								<dd><a href="#">上一页</a></dd>
+								<dd><a href="#">下一页</a></dd>
+							</dl>
+						</div>
+						<div class="goodsList">
+							<ul id="goods" class="clear">
+								
+							</ul>
+						</div>
+				
+					</div>
+					
+					<div class="page">
+						<ul class="clear">
+							<li>首页</li>
+							<li class="pageOn">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>尾页</li>
+						</ul>
+					</div>
+				</div>
+			
+			
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

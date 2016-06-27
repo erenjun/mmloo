@@ -4,7 +4,7 @@
 	addHtml("common/header.html","#header");
 	addHtml("common/nav.html","#nav");
 	addHtml("common/footer.html","#footer");
-
+	addHtml("../js/common/name.js", "#dl");
 $(function(){
 	//轮播图
 	$(".slideImg").on({
@@ -221,6 +221,9 @@ $(function(){
 			$("#stair").css("display","none");
 		}
 //		console.log($(window).scrollTop()+"---"+$(".show > div").eq(0).offset().top);
-	})
+	});
+	
+	
+	//alert($.cookie("user"))
 	
 })

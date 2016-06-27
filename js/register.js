@@ -170,7 +170,9 @@ $(function(){
 	
 	//注册成功跳转
 	$("#cg .zcs button").eq(0).click(function(){
+		
 		location.href = "index.html";
+		$.cookie("user",$("#userName").val(),{expires: 7, path: "/"});
 	})
 	$("#cg .zcs button").eq(1).click(function(){
 		$("#cg").css("display","none");

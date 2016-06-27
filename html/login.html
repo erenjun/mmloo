@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../css/common/footer.css" />
 		<link rel="stylesheet" href="../css/login.css" />
 		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../libs/jquery.cookie.js" ></script>
 		<script type="text/javascript" src="../js/common/addData.js" ></script>
 		<script type="text/javascript" src="../js/login.js" ></script>
 	</head>
@@ -33,11 +34,11 @@
 					<form>
 						<ul>
 							<li>
-								<input type="text" placeholder="手机号/会员/名邮箱"/>
+								<input id="userName" type="text" placeholder="手机号/会员/名邮箱"/>
 								<i><img src="../img/user.png"/></i>
 							</li>
 							<li>
-								<input type="password" />
+								<input id="password" type="password" />
 								<i><img src="../img/pwd.png"/></i>
 							</li>
 							<li>
