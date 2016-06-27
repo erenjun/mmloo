@@ -23,13 +23,56 @@ $(function(){
 			URL = "../data/goods"+page+".json";
 			toPage(URL);
 		});
+	
+	//加入购物车
+	$(".more-ms .toCart").on("click","b",function(){
+		
+		var gb = "<div class=\"goodsBox\"></div>"
+		$(this).parent().parent().parent().parent().append(gb);
+		console.log($(this));
+		var cLeft = $("#header .cart").offset().left;
+		var cTop = $("#header .cart").offset().top;
+		var tLeft = $(this).parent().parent().parent().parent().find(".goodsBox").offset().left;
+		var tTop = $(this).parent().parent().parent().parent().find(".goodsBox").offset().top;
+		$(".goodsBox").stop().animate({
+			"top":cTop-tTop,
+			"left":cLeft-tLeft,
+			"width":1,
+			"height":1,
+			"z-index":999
+		},1000,function(){
+			$(".goodsBox").css("display","none");
+		});
+		$(".ps").css({
+			"border":"1px solid #898989",
+				"padding":"1px",
+			"z-index": 8
+		});
+		$(".ps").find(".img dd").css({
+			"top":10,
+			"z-index": 8
+		});
+		$(".ps").find(".more-ms").css({
+			"height":56,
+			"background":"#fff",
+			"z-index": 8
+		});
+	})
+//$(".toC")
+	
+	//吸顶	
+		
+		
+		
+		
+		
 })
-
+//分页函数
 function toPage(URL){
 	$.ajax({
 		type:"get",
 		url:URL,
-		async:true,
+		async:false,
 		success:function(data){
 			//console.log(data);
 			//alert(1)
@@ -66,7 +109,7 @@ function toPage(URL){
 									+"</a>"
 								+"</li>"
 								+"<li>"
-									+"<span>￥2089.00</span>"
+									+"<span>￥"+goods[i].price+"</span>"
 									+"<i>￥2889.00</i>"
 									+"<em>"
 									+"<img src=\"../img/star-on.png\"/>"
@@ -97,7 +140,7 @@ function toPage(URL){
 												+		"<a href=\"#\">官方店铺</a>"
 												+	"</h3>"
 												+"</li>"
-												+"<li>"
+												+"<li class=\"toCart\">"
 													+"<b>加入购物车</b>"
 												+"</li>"
 											+"</ul>"
@@ -115,7 +158,8 @@ function toPage(URL){
 							"border":"2px solid #f00",
 							"padding":"0",
 							"background":"#fff",
-							"z-index": 10
+							"z-index": 10,
+							"overflow":"visible"
 						});
 						$(this).find(".img dd").css({
 							"top":0,
