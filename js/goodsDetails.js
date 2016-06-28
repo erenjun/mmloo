@@ -29,15 +29,47 @@ $(function(){
 			$(".r-t").css("position", "static");
 		}
 	})
-	$('.jzoom').jzoom({bgColor: "#222"});
+	
+//	var defaultOptions = {
+//              width: 800,
+//              height: 800,
+//              position: "right",
+//              offsetX: 20,
+//              offsetY: 0,
+//              opacity: 0.6,
+//              bgColor: "#fff",
+//              loading: "Loading..."
+//          };
+//	$('.jzoom').jzoom(defaultOptions);
 	//放大镜
 //	$(".box").on({
 //		"mouseover":function(){
-//			$(".fd").css({
-//				"display":"block",
-//				"top"
-//			})
+////			$(".fd").css({
+////				"display":"block",
+////		
+////			})
+//
+//		
+//		},
+//		"mousemove":function(){
+//			
+//		},
+//		"mouseout":function(){
+//			
 //		}
 //	})
+$(".box").append($("<div class='fd'></div>"));
+$(".box").mouseover(function(e){
+	var lwidth=parseFloat(8/3);
+	
+	$(document).mousemove(function(e){
+		$(this).find(".fd").css({
+			left:e.offsetX+"px",
+			top:e.offsetY+"px"
+		})
+		console.log(e.offsetX);
+	})
+	
+})
 
 })

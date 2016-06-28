@@ -390,14 +390,23 @@ float: left;
 }
 
 
-#main .details .del .jzoom {
+/*#main .details .del .jzoom {
 		  position: absolute;
 		  width: 360px;
 		  height: 360px;
-		/*  display: none;*/
-		}
-#main .details .del .jzoom img { 
+		  display: none;
+		}*/
+/*#main .details .del .jzoom img { 
 	border:3px solid #fff;
+}*/
+#main .details .del .box{
+	width:300px;
+	height:300px;
+	border: 1px solid #f00;
+}
+#main .details .del .box img{
+	width:100%;
+	height:100%;
 }
 
 #main .details .del .box .fd{
@@ -406,12 +415,14 @@ float: left;
 	top:0;
 	background: #f00;
 	position:absolute;
+	cursor: move;
 	border:1px solid #f00;
-	display: none;
+	opacity: .6;
 	
 }
 #main .details .del .smallBox{
-	
+	width:100%;
+	height:100%;
 }
 #main .details .del .smallBox li{
 	float: left;
@@ -434,12 +445,14 @@ float: left;
 #main .details .del .bigBox{
 	position: absolute;
 	top: 0;
-	left:400px;
-	z-index: 10px;
-	width: 380px;
-	height:380px;
+	left:310px;
+	background:#fff;
+	z-index: 99;
+	width: 300px;
+	height:300px;
 	border: 1px solid #898989;
-	display:none;
+	display:block;
+	overflow: hidden;
 }
 
 #main .details .dem{
@@ -576,13 +589,16 @@ float: left;
 }
 
 #main .xq{
-	margin-top:20px;
-	
+	margin-top:20px;	
 }
-#main .xq .r-t{
+#main .xq .xq-r{
+	position: relative;
+}
+#main .xq .xq-r .r-t{
+	
 	border:1px solid #666;
 }
-#main .xq .r-t li{
+#main .xq .xq-r .r-t li{
 	float:left;
 	width:242px;
 	height:50px;
@@ -590,11 +606,12 @@ float: left;
 	font:14px/50px "";
 	text-align: center;
 }
-#main .xq .r-b{
+#main .xq .xq-r .r-b{
 	width:100%;
 	text-align: center;
+	position: relative;
 }
-#main .xq .r-b img{
+#main .xq .xq-r .r-b img{
 	display:block;
 	width:960px;
 }
