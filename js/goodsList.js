@@ -28,12 +28,13 @@ $(function(){
 	$(".more-ms .toCart").on("click","b",function(){
 		
 		var gb = "<div class=\"goodsBox\"></div>"
-		$(this).parent().parent().parent().parent().append(gb);
-		console.log($(this));
+		var lis = $(this).parent().parent().parent().parent()
+		lis.append(gb);
+		//console.log($(this));
 		var cLeft = $("#header .cart").offset().left;
 		var cTop = $("#header .cart").offset().top;
-		var tLeft = $(this).parent().parent().parent().parent().find(".goodsBox").offset().left;
-		var tTop = $(this).parent().parent().parent().parent().find(".goodsBox").offset().top;
+		var tLeft = lis.find(".goodsBox").offset().left;
+		var tTop = lis.find(".goodsBox").offset().top;
 		$(".goodsBox").stop().animate({
 			"top":cTop-tTop,
 			"left":cLeft-tLeft,
@@ -57,10 +58,44 @@ $(function(){
 			"background":"#fff",
 			"z-index": 8
 		});
+		
+		//购物车里的商品
+//		var cartHtml = "<table>"
+//						+"<tr>"
+//							+"<td>"+lis.find(".img dt").html()+"</td>"
+//						+"<tr>"
+//						+"</table>"
+//		$(".inCartGoods").append(cartHtml)
+		
 	})
-//$(".toC")
+
 	
-	//吸顶	
+	//吸顶效果
+	
+	//var fixTop = $(".l-t").offset().top;
+	$(window).scroll(function() {
+		
+		var scrollTop = $(window).scrollTop();
+		
+		//console.log(fixTop+"---"+scrollTop)
+		if(scrollTop >= 289) {
+			$(".navBox").css({
+				position: "fixed", 
+				"top": 0,
+				"left":330,
+				"z-index":21
+			});
+			$(".all-category").css({
+				position: "fixed", 
+				"top": 0,
+				"left":120,
+				"z-index":21
+			});
+		} else {
+			$(".navBox").css("position", "static");
+			$(".all-category").css("position", "static");
+		}
+	})
 		
 		
 		
