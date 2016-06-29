@@ -16,12 +16,17 @@ $(function(){
 			var page = $(this).index();
 			if(page == 0){
 				page = 1;
+				$(this).next().addClass("pageOn").siblings().removeClass("pageOn")
 			}
-			if(page == 4){
+			else if(page == 4){
 				page = 3;
+				$(this).prev().addClass("pageOn").siblings().removeClass("pageOn")
+			}else{
+				$(this).addClass("pageOn").siblings().removeClass("pageOn")
 			}
 			URL = "../data/goods"+page+".json";
 			toPage(URL);
+			
 		});
 	
 	//加入购物车
@@ -59,6 +64,27 @@ $(function(){
 			"z-index": 8
 		});
 		
+		
+		var goodId = lis.attr("id");
+		var goodImg = lis.find(".goodImg").attr("src");
+		var goodName = lis.find(".goodName").text();
+		var goodPrice = lis.find(".goodPrice").text().slice(1);
+		
+		
+		var goods = $.cookie('carts') ? JSON.parse($.cookie('carts')) : {};
+				if(goodId in goods){
+					goods[goodId].num++;
+				} else {
+					goods[goodId] = {
+						id : goodId,
+						img:goodImg,
+						name : goodName,
+						price : goodPrice,
+						num : 1
+					}
+				}
+		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
+		console.log($.cookie("carts"))
 		//购物车里的商品
 //		var cartHtml = "<table>"
 //						+"<tr>"
@@ -121,12 +147,12 @@ function toPage(URL){
 					top = top +350;
 					left = 0;
 				}
-				html +=	"<li class=\"ps\" style=\"left:"+left+"px;top:"+top+"px\">"
+				html +=	"<li id=\"g"+goods[i].id+"\" class=\"ps\" style=\"left:"+left+"px;top:"+top+"px\">"
 							+"<div class=\"img\">"
 								+"<dl>"
 									+"<dt>"
 										+"<a href='#'>"
-											+"<img src="+goods[i].img+" />"
+											+"<img class='goodImg' src="+goods[i].img+" />"
 										+"</a>"
 									+"</dt>"
 									+"<dd>"
@@ -139,12 +165,12 @@ function toPage(URL){
 							+"<div class='more-ms'>"
 							+"<ul>"
 								+"<li>"
-									+"<a href=\"#\">奇酷旗舰版全网通（8692-A00） 玫瑰金"
+									+"<a class='goodName' href=\"#\">奇酷旗舰版全网通（8692-A00） 玫瑰金"
 										+"<span></span>"
 									+"</a>"
 								+"</li>"
 								+"<li>"
-									+"<span>￥"+goods[i].price+"</span>"
+									+"<span class='goodPrice'>￥"+goods[i].price+"</span>"
 									+"<i>￥2889.00</i>"
 									+"<em>"
 									+"<img src=\"../img/star-on.png\"/>"

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车结算</title>
+		<link rel="stylesheet" href="../css/common/base.css" />
+		<link rel="stylesheet" href="../css/buy.css" />
+		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../libs/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/common/addData.js" ></script>
+		<script type="text/javascript" src="../js/buy.js" ></script>
+		
+		
+	</head>
+	<body>
+		<div id="dl" style="display: none;"></div>
+		<div id="top_nav"></div>
+		<div id="header">
+			<div class="w1000">
+				<img src="../img/h1.png" />
+			</div>
+		</div>
+		<div id="main">
+			<div class="w1000">
+				<table>
+					<thead
+						<tr>
+							<th class="wid80" style="text-align: left;"><input type="checkbox"/>全选</th>
+							<th class="wid500">商品</th>
+							<th class="wid120">单价（元）</th>
+							<th class="wid120">数量</th>
+							<th class="wid120">小计</th>
+							<th class="wid80">操作</th>
+						</tr>
+						
+					</thead>
+					<tbody id="tb">
+						
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="6">商品总价（不含运费）￥<i id="allPay">0</i> 元</td>
+						</tr>
+						<tr>
+							<td colspan="6"><span>下一步，填写核对购物信息</span></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			
+		</div>
+		
+		
+		<div id="b-goods">
+			<div class="w1000">
+				<img src="../img/bb1.png"  style="margin-top: 20px;"/>
+			</div>
+		</div>
+		
+		<div id="help">
+			<div class="wid-1200 clear">
+				<div class="help1">
+					<h3>购物指南</h3>      
+					<ul>
+						<li><i></i><a href="">礼品卡的购买与使用</a></li>
+						<li><i></i><a href="">无法收到邮件？</a></li>
+						<li><i></i><a href="">关于捷信分期</a></li>
+						<li><i></i><a href="">邮费制度</a></li>
+						<li><i></i><a href="">订单状态说明</a></li>
+					</ul>
+				</div>
+				<div class="help1">     
+					<h3>支付方式</h3>      
+					<ul>
+						<li><i></i><a href="">支付问题</a></li>
+						<li><i></i><a href="">在线支付</a></li>
+						<li><i></i><a href="">货到付款</a></li>
+						<li><i></i><a href="">营销推广</a></li>
+					</ul>
+				</div>
+				<div class="help1">      
+					<h3>配送与服务</h3>      
+					<ul>
+						<li><i></i><a href="">申请售后退款说明</a></li>
+						<li><i></i><a href="">取消订单退款说明</a></li>
+						<li><i></i><a href="">装机与维修服务</a></li>
+						<li><i></i><a href="">退换货流程</a></li>
+						<li><i></i><a href="">第三方配送</a></li>
+					</ul>
+				</div>
+				<div class="help1">
+					<h3>商家入驻</h3>      
+					<ul>
+						<li><i></i><a href="">小米鸽（兼职招商专员）</a></li>
+						<li><i></i><a href="">广告位管理与流程申报</a></li>
+						<li><i></i><a href="">活动组织与流程申报</a></li>
+						<li><i></i><a href="">如何发货</a></li>
+						<li><i></i><a href="">我要开店</a></li>
+					</ul>
+				</div>
+				<div class="help2">
+					<h3>客服中心</h3>
+					<ul>
+						<li><img src="../img/p1.png"/></li>
+						<li>E-mail：mmloo@mmloo.com</li>
+						<li>四川省成都市新南路亚华大厦六楼</li>
+						<li><a><img src="../img/qq_index.gif"/>4006780781 </a></li>
+					</ul>
+				</div>
+				<div class="help3">
+					<h3><a href="#">关于米米乐商城</a></h3>
+					<ul>
+						<li><img src="../img/scmmloo.png"/></li>
+						<li>手机下单更优惠</li>
+						<li>快乐网购 轻松拥有</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="footer"></div>
+	</body>
+</html>

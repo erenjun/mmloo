@@ -1,5 +1,6 @@
 {
 	"g0":{
+		"id":0,
 		"img":"../img/good5.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -7,6 +8,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g1":{
+		"id":1,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -14,6 +16,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g2":{
+		"id":2,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -21,6 +24,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g3":{
+		"id":3,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
@@ -28,6 +32,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g4":{
+		"id":4,
 		"img":"../img/good1.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -35,6 +40,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g5":{
+		"id":5,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -42,6 +48,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g6":{
+		"id":6,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -49,6 +56,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g7":{
+		"id":7,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
@@ -56,6 +64,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g8":{
+		"id":8,
 		"img":"../img/good1.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -63,6 +72,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g9":{
+		"id":9,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -70,6 +80,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g10":{
+		"id":10,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -77,6 +88,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g11":{
+		"id":11,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
@@ -84,6 +96,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g12":{
+		"id":12,
 		"img":"../img/good1.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -91,6 +104,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g13":{
+		"id":13,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -98,6 +112,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g14":{
+		"id":14,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -105,6 +120,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g15":{
+		"id":15,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
@@ -112,6 +128,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g16":{
+		"id":16,
 		"img":"../img/good1.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -119,6 +136,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g17":{
+		"id":17,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -126,6 +144,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g18":{
+		"id":18,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -133,6 +152,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g19":{
+		"id":19,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
@@ -140,6 +160,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g20":{
+		"id":20,
 		"img":"../img/good1.jpg",
 		"href":"#",
 		"price":2023.00,
@@ -147,6 +168,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g21":{
+		"id":21,
 		"img":"../img/good2.jpg",
 		"href":"#",
 		"price":2199.00,
@@ -154,6 +176,7 @@
 		"comnite":"酷比P1(百事系列)非定制机尊贵银"
 	},
 	"g22":{
+		"id":22,
 		"img":"../img/good3.jpg",
 		"href":"#",
 		"price":998.00,
@@ -161,6 +184,7 @@
 		"comnite":"YIBAN(一瓣)智能儿童手表 蓝色 Y95"
 	},
 	"g23":{
+		"id":23,
 		"img":"../img/good4.jpg",
 		"href":"#",
 		"price":23465.00,
