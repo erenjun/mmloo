@@ -10,7 +10,8 @@
 		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
 		<script type="text/javascript" src="../libs/jquery.cookie.js" ></script>
 		<script type="text/javascript" src="../js/common/addData.js" ></script>
-		<script type="text/javascript" src="../js/common/jzoom.js" ></script>
+		<script type="text/javascript" src="../js/common/jquery.jqzoom.js" ></script>
+		<script type="text/javascript" src="../js/common/zoom.js" ></script>
 		<script type="text/javascript" src="../js/goodsDetails.js" ></script>
 	</head>
 	<body>
@@ -54,32 +55,34 @@
 					</ul>
 				</div>
 				<div class="details clear">
-					<div class="del">
-						<!--ffff-->
-						<!--<div class="jzoom" style="width:200px;height: 200px;">
-							<img src="../img/b1.jpg" height="200" width="200" >
-					    </div>-->
-					    <div class="box">
-					    	<img src="../img/b1.jpg" />
-					    	<div ></div>
-					    </div>
-						<div class="smallBox">
-							<ul class="clear">
-								<li class="show">
-									<img src="../img/good21.jpg"/>
-								</li>
-								<li>
-									<img src="../img/good22.jpg"/>
-								</li>
-								<li>
-									<img src="../img/good21.jpg"/>
-								</li>
-							</ul>
+					<div class="del">			
+						<div style="width:380px">
+							<div id="preview" class="spec-preview">
+								<span class="jqzoom">
+										<img jqimg="../img/b2.jpg" src="../img/b2.jpg" height="380" width="380" />
+								</span>
+							</div>
+							<!--缩图开始-->
+							<div class="spec-scroll">
+								<a class="prev">&lt;</a>
+								<a class="next">&gt;</a>
+								<div class="items">
+									<ul>
+										<li><img alt="佳能" bimg="../img/b2.jpg" src="../img/b2.jpg" onmousemove="preview(this);"></li>
+										<li><img alt="佳能" bimg="../img/b1.jpg" src="../img/b1.jpg" onmousemove="preview(this);"></li>
+										<li><img alt="佳能" bimg="../img/web-101-101-2.jpg" src="../img/web-101-101-2.jpg" onmousemove="preview(this);"></li>
+										<li><img alt="佳能" bimg="../img/g2.jpg" src="../img/g2.jpg" onmousemove="preview(this);"></li>
+										<li><img alt="佳能" bimg="../img/g4.jpg" src="../img/g4.jpg" onmousemove="preview(this);"></li>-
+									</ul>
+								</div>
+							</div>
+							<!--缩图结束-->
 						</div>
-						<div class="bigBox">
-							<img src="../img/b1.jpg" />
-							<i>X</i>
-						</div>
+						
+						
+						
+						
+						
 					</div>
 					
 					<div class="dem">

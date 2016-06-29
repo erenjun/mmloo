@@ -8,14 +8,6 @@
 	
 
 $(function(){
-	$(".smallBox ul").on("mouseover","li",function(){
-		$(this).addClass("show").siblings().removeClass("show");
-		//$(".box").html($(this).html()+"<div class=\"fd\"></div>");
-		var imgURL = $(this).find("img").attr("src");
-		console.log(imgURL)
-		$(".box img").attr("src",imgURL);
-		$(".bigBox img").attr("src",imgURL);
-	});
 	//吸顶
 	$(window).scroll(function() {
 		
@@ -35,68 +27,7 @@ $(function(){
 	})
 	
 //放大镜
-	$(".box").click(function(){
-		$(".bigBox").css("display","block");
-		$(".bigBox img").css("left",400)
-	})
-	var cb = true;
-	$(".bigBox img").click(function(){
-		if(cb){
-			cb = false;
-			$(this).css({
-				width:800,
-				height:800,
-				left:"50%",
-				top:"50%",
-				marginLeft:-400,
-				marginTop:-400,
-			})
-//		}else{
-//			cb = true;
-//			$(this).css({
-//				width:400,
-//				height:400
-//			})
-		}	
-	})
-	
-	$(".bigBox img").on("mousedown",function(e){
-		var currentY = e.offsetY;
-		var currentX = e.offsetX;
-		//console.log(currentX);
-		//e.preventDefault();
-		$(".bigBox").on("mousemove",function(e){
-			//var mt = e.clientY - e.offsetY+"%"
-			e.preventDefault();
-			$(".bigBox img").css({
-				top:e.clientY - currentY,
-				left:e.clientX - currentX,
-			})
-		console.log(e.clientX+"=="+e.clientY+">>"+e.offsetX+"--"+e.offsetY)
-		//console.log(e.offsetX+"--"+e.offsetY)
-		})
-		
-		$(".bigBox img").mouseup(function(e){
-			$(".bigBox").off("mousemove");
-			//$(".bigBox").off("mousemove");
-		})
-	})
-	
-	$(".bigBox i").on({
-		"click":function(){
-			$(".bigBox").css("display","none");
-			$(".bigBox img").css({
-				"left":400,
-				"width":400,
-				"height":400,
-				"top":0,
-				"margin":"auto"
-			})
-			cb = true;
-		}
-	})
-	
-	
+
 	///加减数量
 	$("#jia").click(function(e){
 		e.preventDefault();

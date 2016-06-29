@@ -386,97 +386,103 @@ float: left;
 
 #main .details .del{
 	float: left;
-	position: relative;
+	/*position: relative;*/
 }
 
+.jqzoom{
+    float:left;
+    border:none;
+    position:relative;
+    padding:0px;
+    cursor:pointer;
+    margin:0px;
+    display:block;
+}
+.zoomdiv{
+    z-index:100;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100px;
+    height:100px;
+    background:#ffffff;
+    border:1px solid #CCCCCC;
+    display:none;
+    text-align:center;
+    overflow:hidden;
+}
+.jqZoomPup{
+    z-index:10;
+    visibility:hidden;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:20px;
+    height:20px;
+    border:1px solid #aaa;
+    background:#ffffff;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    filter: alpha(Opacity=50);
+}
+/*ͼƬСͼԤ   б */
+.spec-preview{
+    width:380px;
+    height:380px;
+    border:1px solid #DFDFDF;
+ }
+.spec-scroll{
+    clear:both;margin-top:5px;width:380px;}
+.spec-scroll .prev{
+    float:left;
+    margin-right:4px;
+}
+.spec-scroll .next{
+    float:right;
+}
+.spec-scroll .prev,.spec-scroll .next{
+    display:block;
+    font-family:"    ";
+    text-align:center;
+    width:10px;
+    height:54px;
+    line-height:54px;
+    border:1px solid #CCC;
+    background:#EBEBEB;
+    cursor:pointer;
+    text-decoration:none;
+}
+.spec-scroll .items{
+    float:left;
+    position:relative;
+    width:350px;
+    height:68px;
+    overflow:hidden;
+}
+.spec-scroll .items ul{
+    clear:both;
+    position:absolute;
+    width:999999px;
+    height:63px;
+}
+.spec-scroll .items ul li{
+    float:left;
+    width:60px;
+    margin-left: 9px;
+    text-align:center;
+}
+.spec-scroll .items ul li img{
+    border:1px solid #CCC;
+    padding:2px;
+    width:50px;
+    height:50px;
+}
+.spec-scroll .items ul li img:hover{
+    border:2px solid #FF6600;
+    padding:1px;
+}
 
-/*#main .details .del .jzoom {
-		  position: absolute;
-		  width: 360px;
-		  height: 360px;
-		  display: none;
-		}*/
-/*#main .details .del .jzoom img { 
-	border:3px solid #fff;
-}*/
-#main .details .del .box{
-	width:400px;
-	height:400px;
-	border: 1px solid #f00;
-}
-#main .details .del .box img{
-	width:100%;
-	height:100%;
-}
-
-#main .details .del .box .fd{
-	width:100px;
-	height:100px;
-	top:0;
-	background: #f00;
-	position:absolute;
-	cursor: move;
-	border:1px solid #f00;
-	opacity: .6;
-	display: none;
-	
-}
-#main .details .del .smallBox{
-	width:100%;
-	height:100%;
-}
-#main .details .del .smallBox li{
-	float: left;
-	padding:5px;
-	width:60px;
-	height:60px;
-	border: 1px solid #898989;
-	margin-right: 10px;
-	margin-top: 10px;
-	cursor: pointer;
-}
-#main .details .del .smallBox li.show{
-	border: 1px solid #F00;
-}
-#main .details .del .smallBox li img{
-	width:100%;
-	height:100%;
-	
-}
-#main .details .del .bigBox{
-	position: absolute;
-	top: 0;
-	left:0;
-	background:#fff;
-	z-index: 99;
-	width: 1194px;
-	height:540px;
-	border: 1px solid #898989;
-	display:none;
-	overflow: hidden;
-	text-align: center;
-}
-#main .details .del .bigBox img{
-	position:absolute;
-	width: 400px;	
-	height:400px;
-	margin:auto;
-}
-#main .details .del .bigBox i{
-	display: block;
-	height: 30px;
-	width: 30px;
-	border: 1px solid #666;
-	border-radius: 50%;
-	padding:5px;
-	font:bold 30px/30px "";
-	top:0;
-	right: 0;
-	position: absolute;
-	color: #666;
-	z-index: 10;
-	background: #fff;
-}
 #main .details .dem{
 	float:left;
 	margin-left:10px;
