@@ -70,7 +70,7 @@ $(function(){
 		var goodName = lis.find(".goodName").text();
 		var goodPrice = lis.find(".goodPrice").text().slice(1);
 		
-		
+		var cartHtml = "";
 		var goods = $.cookie('carts') ? JSON.parse($.cookie('carts')) : {};
 				if(goodId in goods){
 					goods[goodId].num++;
@@ -84,15 +84,42 @@ $(function(){
 					}
 				}
 		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
-		console.log($.cookie("carts"))
+		//console.log($.cookie("carts"))
 		//购物车里的商品
-//		var cartHtml = "<table>"
-//						+"<tr>"
-//							+"<td>"+lis.find(".img dt").html()+"</td>"
-//						+"<tr>"
-//						+"</table>"
-//		$(".inCartGoods").append(cartHtml)
+		cartHtml = "<tr>"
+					+"<td>"+lis.find(".img dt").html()+"</td>"
+				+"<tr>"
+			
+		$(".inCartGoods .loading").remove();				
+//		$(".inCartGoods table").append(cartHtml);
 		
+		var goods = JSON.parse($.cookie('carts'));
+		var html = "";
+		var allPay = 0;
+		//购物车列表
+		for(i in goods){
+			html = "<tr id="+goods[i].id+">"
+					+"<td><img style='width:40px;height:40px;' src="+goods[i].img+"/></td>"
+					+"<td><a href='goodsDetails'>"+goods[i].name+"</a></td>"
+					+"<td style='text-align:center'>￥<b class='one'>"+goods[i].price+"x"+goods[i].num+"</b></td>"
+					+"<td style='text-align:center'><b style='cursor:pointer;' id='removeGood'>删除</b></td>"
+					+"</tr>";
+		$(".inCartGoods table").append(html);
+			allPay = allPay + (goods[i].price*goods[i].num);
+		}
+		
+	})
+	//删除商品
+	$("#removeGood").click(function(){
+		alert(1);
+		$(this).parent().parent().remove();
+		//$("#allPay").text(parseInt($("#allPay").text())-parseInt($(this).parent().parent().find(".all").text()));
+		var goodId = $(this).parent().parent().attr("id");
+		//console.log(goods.g1)
+		//console.log(222)
+		delete goods[goodId];
+		//console.log(goods)
+		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
 	})
 
 	
@@ -108,13 +135,13 @@ $(function(){
 			$(".navBox").css({
 				position: "fixed", 
 				"top": 0,
-				"left":330,
+				"left":250,
 				"z-index":21
 			});
 			$(".all-category").css({
 				position: "fixed", 
 				"top": 0,
-				"left":120,
+				"left":38,
 				"z-index":21
 			});
 		} else {
@@ -151,7 +178,7 @@ function toPage(URL){
 							+"<div class=\"img\">"
 								+"<dl>"
 									+"<dt>"
-										+"<a href='#'>"
+										+"<a href='goodsDetails.html'>"
 											+"<img class='goodImg' src="+goods[i].img+" />"
 										+"</a>"
 									+"</dt>"
@@ -165,7 +192,7 @@ function toPage(URL){
 							+"<div class='more-ms'>"
 							+"<ul>"
 								+"<li>"
-									+"<a class='goodName' href=\"#\">奇酷旗舰版全网通（8692-A00） 玫瑰金"
+									+"<a class='goodName' href=\"goodsDetails.html\">奇酷旗舰版全网通（8692-A00） 玫瑰金"
 										+"<span></span>"
 									+"</a>"
 								+"</li>"

@@ -43,20 +43,54 @@ $(function(){
 	$("#tocart").click(function(e){
 		e.preventDefault()
 		$("#topay").css("display","block");
-		var img = $(".show img").attr("src");
-		var a = $(".name h1").text();
-		var price = $(".nsc li i").eq(1).text();
+		var goodId = "g00"
+		var goodImg = $(".jqzoom img").attr("src");
+		var goodName = $(".name h1").text();
+		var goodPrice = $(".nsc li i").eq(1).text();
 		var num = $("#num").val();
 		
-		var goodInfo = [];
-		goodInfo.push(img);
-		goodInfo.push(a);
-		goodInfo.push(price);
-		goodInfo.push(num);
+		var goods = $.cookie('carts') ? JSON.parse($.cookie('carts')) : {};
+				if(goodId in goods){
+					goods[goodId].num++;
+				} else {
+					goods[goodId] = {
+						id : goodId,
+						img:goodImg,
+						name : goodName,
+						price : goodPrice,
+						num : 1
+					}
+				}
+		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
 		
-		$.cookie("cart", goodInfo,{expires: 7, path: "/"});
-		console.log($.cookie("cart"))
+		var lis = $(this).parent().parent().parent().parent()
+		console.log(goods);
+		cartHtml = "<tr>"
+					+"<td>"+lis.find(".img dt").html()+"</td>"
+				+"<tr>"
+			
+		$(".inCartGoods .loading").remove();				
+//		$(".inCartGoods table").append(cartHtml);
+		
+		var goods = JSON.parse($.cookie('carts'));
+		var html = "";
+		var allPay = 0;
+		//购物车列表
+		for(i in goods){
+			html = "<tr id="+goods[i].id+">"
+					+"<td><img style='width:40px;height:40px;' src="+goods[i].img+"/></td>"
+					+"<td><a href='goodsDetails'>"+goods[i].name+"</a></td>"
+					+"<td style='text-align:center'>￥<b class='one'>"+goods[i].price+"x"+goods[i].num+"</b></td>"
+					+"<td style='text-align:center'><b style='cursor:pointer;' id='removeGood'>删除</b></td>"
+					+"</tr>";
+		$(".inCartGoods table").append(html);
+			allPay = allPay + (goods[i].price*goods[i].num);
+		}
+		
+		
 	})
+	
+	
 	$("#guanbi").click(function(){
 		$("#topay").css("display","none");
 	})

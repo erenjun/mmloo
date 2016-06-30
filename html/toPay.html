@@ -2,61 +2,40 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>购物车结算</title>
+		<title>提交订单</title>
 		<link rel="stylesheet" href="../css/common/base.css" />
-		<link rel="stylesheet" href="../css/buy.css" />
+		<link rel="stylesheet" href="../css/toPay.css" />
 		<script type="text/javascript" src="../libs/jquery-1.12.3.js" ></script>
 		<script type="text/javascript" src="../libs/jquery.cookie.js" ></script>
 		<script type="text/javascript" src="../js/common/addData.js" ></script>
-		<script type="text/javascript" src="../js/buy.js" ></script>
-		
-		
+		<script type="text/javascript" src="../js/toPay.js" ></script>
 	</head>
 	<body>
 		<div id="dl" style="display: none;"></div>
 		<div id="top_nav"></div>
 		<div id="header">
 			<div class="w1000">
-				<img src="../img/h1.png" />
+				<img src="../img/topay1.png" />
 			</div>
 		</div>
 		<div id="main">
 			<div class="w1000">
-				<table>
-					<thead
-						<tr>
-							<th class="wid80" style="text-align: left;"><input id="allSelect" type="checkbox" checked="checked"/>全选</th>
-							<th class="wid500">商品</th>
-							<th class="wid120">单价（元）</th>
-							<th class="wid120">数量</th>
-							<th class="wid120">小计</th>
-							<th class="wid80">操作</th>
-						</tr>
-						
-					</thead>
-					<tbody id="tb">
-						
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="6">商品总价（不含运费）￥<i id="allPay">0</i> 元</td>
-						</tr>
-						<tr>
-							<td colspan="6"><span id="next">下一步，填写核对购物信息</span></td>
-						</tr>
-					</tfoot>
-				</table>
+				<div class="payFor">
+					<p>订单总金额：￥ <span id="pf">0</span> 元</p>
+				</div>
+				<div class="pBtn">
+					<a href="#">提交订单</a>
+				</div>
+				
+			</div>
+		</div>
+		<div id="success">
+			<div class="sc">
+				<h1>支付成功</h1>
+				<span>返回首页</span>
 			</div>
 			
 		</div>
-		
-		
-		<div id="b-goods">
-			<div class="w1000">
-				<img src="../img/bb1.png"  style="margin-top: 20px;"/>
-			</div>
-		</div>
-		
 		<div id="help">
 			<div class="wid-1200 clear">
 				<div class="help1">
@@ -117,7 +96,6 @@
 				</div>
 			</div>
 		</div>
-		
 		
 		<div id="footer"></div>
 	</body>

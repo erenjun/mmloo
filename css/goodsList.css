@@ -343,7 +343,7 @@
 	border: solid 1px #D7D7D7;
 }
 #main .mtop .mtop-r .navBox dl{
-	float:left;
+	/*float:left;*/
 	font: 12px/36px "microsoft yahei";
 	color: #777;
 	padding: 0 0 0 10px;
