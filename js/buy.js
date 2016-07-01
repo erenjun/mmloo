@@ -113,8 +113,18 @@ $(function(){
 		delete goods[goodId];
 		//console.log(goods)
 		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
+		//console.log(goods)
+		
+		if($.isEmptyObject(goods)){
+			$("#tb").append("<tr><td colspan='6' style='text-align:center;color:#f00;font-size:20px;'>已经没有了</td></tr>")
+		}
 	})
 	
+	if($.isEmptyObject(goods)){
+			$("#tb").append("<tr><td colspan='6' style='text-align:center;color:#f00;font-size:20px;'>已经没有了</td></tr>")
+		}
+	
+	//进入结算
 	$("#next").click(function(){
 		location.href = "toPay.html";
 		var allIn = $("#allPay").text();

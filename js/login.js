@@ -37,11 +37,19 @@ $(function(){
 				var users = data;
 				var userName = $("#userName").val();
 				var pwd = $("#password").val();
+				//console.log(users.length)
 				for(var i in users){
-					//console.log(users[i]);
+					console.log(users[i]);
 					if(userName == users[i].name && pwd == users[i].mm){
 						location.href = "index.html";
 						$.cookie("user",userName,{expires: 7, path: "/"});
+						return true;
+					}else{
+						if(users[i].id == 1){
+							alert("用户名与密码不正确");
+							return false;
+						}
+						
 					}
 				}
 			}

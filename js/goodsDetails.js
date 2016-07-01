@@ -8,6 +8,19 @@
 	
 
 $(function(){
+	var good = JSON.parse($.cookie('good'));
+	console.log(good.img)
+	//for(i in good){}
+	//$(".jqzoom").append("<img jqimg='"+good.img+"' src='"+good.img+"' height=\"380\" width=\"380\" />')
+	$(".jqzoom img").attr({
+		"jqimg":good.img,
+		"src":good.img
+	})
+	$(".items li").eq(0).find("img").attr({
+		"bimg":good.img,
+		"src":good.img
+	})
+	$(".price").text(good.price)
 	//吸顶
 	$(window).scroll(function() {
 		
@@ -18,7 +31,7 @@ $(function(){
 			$(".r-t").css({
 				position: "fixed", 
 				"top": 0,
-				"left":343,
+				"left":"20%",
 				"z-index":21
 			});
 		} else {

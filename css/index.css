@@ -639,6 +639,7 @@
 	font-weight: bold;
 	background: #f12345;
 	color:#fff;
+	cursor: pointer;
 }
 #stair li span{
 	position: absolute;

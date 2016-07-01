@@ -165,6 +165,8 @@ $(function(){
 		if(t1 && t2 && t3&& t5){
 			//location.href = index.html
 			$("#cg").css("display","block");
+		}else{
+			alert("请正确填写信息")
 		}
 	})
 	

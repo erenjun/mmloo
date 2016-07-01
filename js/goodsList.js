@@ -68,8 +68,7 @@ $(function(){
 		var goodId = lis.attr("id");
 		var goodImg = lis.find(".goodImg").attr("src");
 		var goodName = lis.find(".goodName").text();
-		var goodPrice = lis.find(".goodPrice").text().slice(1);
-		
+		var goodPrice = lis.find(".goodPrice").text().slice(1);	
 		var cartHtml = "";
 		var goods = $.cookie('carts') ? JSON.parse($.cookie('carts')) : {};
 				if(goodId in goods){
@@ -121,6 +120,26 @@ $(function(){
 		//console.log(goods)
 		$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
 	})
+	
+	//跳转到详情页
+	$(".togd").click(function(){
+		var lis = $(this).parent().parent().parent().parent()
+		var goodId = lis.attr("id");
+		var goodImg = lis.find(".goodImg").attr("src");
+		var goodName = lis.find(".goodName").text();
+		var goodPrice = lis.find(".goodPrice").text().slice(1);	
+		var good = {
+						id : goodId,
+						img:goodImg,
+						name : goodName,
+						price : goodPrice,
+						num : 1
+					}
+				
+		$.cookie("good", JSON.stringify(good), {expires:7,path:'/'});
+		//alert("good")
+	})
+	
 
 	
 	//吸顶效果
@@ -135,13 +154,13 @@ $(function(){
 			$(".navBox").css({
 				position: "fixed", 
 				"top": 0,
-				"left":250,
+				"left":"20%",
 				"z-index":21
 			});
 			$(".all-category").css({
 				position: "fixed", 
 				"top": 0,
-				"left":38,
+				"left":"3%",
 				"z-index":21
 			});
 		} else {
@@ -178,7 +197,7 @@ function toPage(URL){
 							+"<div class=\"img\">"
 								+"<dl>"
 									+"<dt>"
-										+"<a href='goodsDetails.html'>"
+										+"<a class='togd' href='goodsDetails.html'>"
 											+"<img class='goodImg' src="+goods[i].img+" />"
 										+"</a>"
 									+"</dt>"
